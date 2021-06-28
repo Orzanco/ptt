@@ -1,0 +1,38 @@
+.greeting {
+    position: relative;
+    width: 100%;
+    height:300px;
+    background-image:url('https://kpoplat.com/wp-content/uploads/2020/07/Blackpink.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    color: #ffffff;
+}
+.greeting::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgb(0 0 0 / 50%);
+    z-index: 1;
+}
+.greeting h1 {
+    position: relative;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 52px;
+    color: #ffffff;
+    z-index: 2;
+}
+.greeting div {
+    position: relative;
+    z-index: 2;
+}
