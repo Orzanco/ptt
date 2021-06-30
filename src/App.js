@@ -1,21 +1,15 @@
-import React from "react";
-import "./App.css";
-import Header from "./components/Header/Header";
-import Greeting from './components/Header/Greeting';
-import ItemListContainer from './components/ItemListContainer/ItemListContainer';
-
-class App extends React.Component {
-  render() {
-    return (
-      <div className="container">
-        <Header title={"BiBiStore"} />
-        <Greeting greeting={"BiBi Store"}/>
-        <div className="cards-container">
-          <ItemListContainer greeting={"Bienvenidos"} />
-        </div>
-      </div>
-    );
-  }
+import logo from './logo.svg';
+import './App.css';
+import NabVar from './components/NavBar/NavBar'
+import ItemListContainer from './components/Items/ItemListContainer/ItemListContainer'
+function App() {
+  return (
+    <div className="App">
+      <NabVar/>
+      <ItemListContainer ></ItemListContainer>
+      
+    </div>
+  );
 }
 
 export default App;
